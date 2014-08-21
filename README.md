@@ -5,7 +5,9 @@ How we added Springshare chat to our instance of Primo
 <br>David Bass @ WWU
 <br>21 Aug 2014
 
-To add Springshare chat to Primo, we added the following code to our Primo footer (http://library.wwu.edu/info/primo/wwu_footer.html).  To see our code, just view source, and search for "chat".
+To add Springshare chat to Primo (as shown in thes screenshot below), we added the following code to our Primo footer (http://library.wwu.edu/info/primo/wwu_footer.html).  To see our code, just view source, and search for "chat".
+
+![](https://dl.dropboxusercontent.com/u/139438694/ShareX/2014-08/2014-08-21_13-46-12.png)
 
 Here is a simplified version of what you need to make this work:
 
