@@ -40,4 +40,6 @@ The basic concept is to:
  - Create a place for your widget to go into (see the " replace the contactalibrarian div with the Springshare Chat" section)
  - And then when the libanswers.com/js/chat_load_client.js is loaded (see our footer for the code), it will magically appear. 
 
+Please note that this code requires jQuery, but it is already loaded by Primo.
+
 Hope this helps.  :)
