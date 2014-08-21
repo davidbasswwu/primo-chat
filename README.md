@@ -12,7 +12,7 @@ Here is a simplified version of what you need to make this work:
 ```
 <script> 
 $(document).ready(function() {
-var libchat_btn = {
+	var libchat_btn = {
 	   iid: "your-id-here",
 	   key: "your-key-here",
 	   domain: "askus.library.example.edu",
@@ -28,11 +28,16 @@ var libchat_btn = {
 
 	// replace the contactalibrarian div with the Springshare Chat
 	$("#exlidSearchBanner").html("<div id='libchat_btn_widget'></div>");
-
+});
 </script>
 
 <script type="text/javascript" src="//libanswers.com/js/chat_load_client.js"></script>
 
 ```
+
+The basic concept is to:
+ - Define your libchat parameters (see the "var libchat_btn" section)
+ - Create a place for your widget to go into (see the " replace the contactalibrarian div with the Springshare Chat" section)
+ - And then when the libanswers.com/js/chat_load_client.js is loaded (see our footer for the code), it will magically appear. 
 
 Hope this helps.  :)
