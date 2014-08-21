@@ -1,4 +1,38 @@
 primo-chat
 ==========
 
-How we added libchat to our instance of Primo
+How we added Springshare chat to our instance of Primo
+David Bass @ WWU
+21 Aug 2014
+
+To add Springshare chat to Primo, we added the following code to our Primo footer (http://library.wwu.edu/info/primo/wwu_footer.html).  To see our code, just view source, and search for "chat".
+
+Here is a simplified version of what you need to make this work:
+
+```
+<script> 
+$(document).ready(function() {
+var libchat_btn = {
+	   iid: "your-id-here",
+	   key: "your-key-here",
+	   domain: "askus.library.example.edu",
+	   splash: "Welcome to My University Chat!",
+	   button_online: "http://library.example.edu/images/chat_on.png",
+	   button_offline: "http://library.example.edu/images/chat_off.png",
+	   offline_url: "http://askus.library.example.edu/browse.php?tid=23567",
+	   question: "Please enter question below:",
+	   star_ratings: true,
+	   star_text: "Please rate this chat:",
+	   depart_id: "your-depart-id-from-springshare"
+	};
+
+	// replace the contactalibrarian div with the Springshare Chat
+	$("#exlidSearchBanner").html("<div id='libchat_btn_widget'></div>");
+
+</script>
+
+<script type="text/javascript" src="//libanswers.com/js/chat_load_client.js"></script>
+
+```
+
+Hope this helps.  :)
